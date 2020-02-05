@@ -27,5 +27,46 @@ p {
   background-color: #db008d;
   overflow: hidden;
 }
-main-nav {
+.main-nav {
+  padding: 1.25em 0;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.main-content {
+  margin-top: 2.5em;
+  padding: 0;
+}
+/* Media query */
+@media (min-width: 768px) {
+  .main-content {
+    width: 70%;
+    float: left;
+    padding: 0 3.75em 0 0;
+  }
+  .sidebar {
+    width: 30%;
+    float: right;
+    padding: 0;
+    margin-top: 2.5em;
+  }
+}
+/* Acceder a los hijos de un elemento HTML */
+.main-nav a:hover {
+  background-color: #00b8e4;
+}
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.375em;
+  padding: 1.25em;
+  text-align: center;
+  display: block;
+}
+@media (min-width: 768px) {
+  .main-nav a {
+    display: inline;
+  }
 }
