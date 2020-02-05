@@ -1,0 +1,31 @@
+/* https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+img {
+  max-width: 100%;
+}
+p {
+  font-size: 1em;
+}
+.site-header {
+  padding: 1.25em 0;
+}
+.container {
+  max-width: 75em;
+  margin: 0 auto;
+}
+.bar {
+  background-color: #db008d;
+  overflow: hidden;
+}
+main-nav {
+}
