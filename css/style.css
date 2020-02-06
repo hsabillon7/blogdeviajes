@@ -64,9 +64,69 @@ p {
   padding: 1.25em;
   text-align: center;
   display: block;
+  transition: background-color 0.3s ease-in-out;
 }
 @media (min-width: 768px) {
   .main-nav a {
     display: inline;
   }
+}
+/* Entradas del blog */
+h2 {
+  color: #00b8e4;
+  margin-bottom: 1.25em;
+}
+.entry {
+  margin-bottom: 3.75em;
+}
+.entry:last-of-type {
+  margin-bottom: 0;
+}
+.entry img {
+  display: block;
+}
+/* Colocar la imagen a la izquierda */
+@media (min-width: 768px) {
+  .entry img {
+    width: 18.75em;
+    float: left;
+    margin: 0 1.25em 0 0;
+  }
+}
+.entry p {
+  text-align: justify;
+}
+.buttom {
+  background-color: #00b8e4;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 0.625em 3.75em;
+  margin-top: 0.625em;
+  font-size: 1.25em;
+  font-weight: bold;
+  display: inline-block;
+  transition: background-color 0.3s ease-in-out;
+}
+.buttom:hover {
+  background-color: #0083a4;
+}
+/*  Sidebar */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  padding: 0.625em;
+}
+.sidebar ul li:hover {
+  background-color: #00b8e4;
+}
+.sidebar ul li a {
+  color: #0083a4;
+  font-size: 1.25em;
+  text-decoration: none;
+}
+.sidebar ul li:hover a {
+  color: #ffffff;
 }
